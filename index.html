@@ -9,6 +9,7 @@
   <script src="https://alwingulla.com/88/tag.min.js" data-zone="115648" async data-cfasync="false"></script>
 
   <style>
+    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -17,6 +18,7 @@
       color: #333;
     }
 
+    /* Header Styles */
     header {
       background: linear-gradient(90deg, #0066cc, #004d99);
       color: #fff;
@@ -35,6 +37,7 @@
       font-size: 16px;
     }
 
+    /* Content Section Styles */
     .content {
       max-width: 1200px;
       margin: 20px auto;
@@ -72,6 +75,7 @@
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 
+    /* Ad Container Styles */
     .ad-container {
       display: flex;
       flex-direction: column;
@@ -83,15 +87,15 @@
     .ad-slot {
       width: 100%;
       max-width: 728px;
-      height: auto;
       background: #e0e0e0;
       border: 2px dashed #ccc;
       display: flex;
-      align-items: center;
       justify-content: center;
-      font-size: 16px;
-      color: #666;
+      align-items: center;
       overflow: hidden;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     iframe {
@@ -101,6 +105,7 @@
       border: none;
     }
 
+    /* Footer Styles */
     footer {
       background: linear-gradient(90deg, #004d99, #003366);
       color: #fff;
@@ -114,11 +119,13 @@
       font-size: 14px;
     }
 
+    /* Responsive Styles */
     @media (max-width: 768px) {
       .ad-slot {
         max-width: 100%; /* Allow ads to resize on mobile */
         height: auto;
       }
+
       iframe {
         width: 100%; /* Full width for mobile */
         max-width: 100%; /* Avoid overflow on smaller screens */
