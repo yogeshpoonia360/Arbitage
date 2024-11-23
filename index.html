@@ -16,21 +16,25 @@
       background-color: #f1f1f1;
       color: #333;
     }
+
     header {
       background: linear-gradient(90deg, #0066cc, #004d99);
       color: #fff;
       text-align: center;
       padding: 20px 10px;
     }
+
     header h1 {
       margin: 0;
       font-size: 28px;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     }
+
     header p {
       margin: 5px 0 0;
       font-size: 16px;
     }
+
     .content {
       max-width: 1200px;
       margin: 20px auto;
@@ -39,15 +43,18 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     .content h2 {
       font-size: 24px;
       margin-bottom: 10px;
       color: #0066cc;
     }
+
     .content p {
       font-size: 16px;
       line-height: 1.6;
     }
+
     .cta-button {
       display: inline-block;
       background: #0066cc;
@@ -59,17 +66,20 @@
       margin-top: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+
     .cta-button:hover {
       background: #004d99;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
+
     .ad-container {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center; /* Center ads horizontally */
       gap: 20px;
-      justify-content: center;
       margin-top: 20px;
     }
+
     .ad-slot {
       width: 100%;
       max-width: 728px;
@@ -83,12 +93,14 @@
       color: #666;
       overflow: hidden;
     }
+
     iframe {
       width: 100%;
+      max-width: 728px;
       height: auto;
-      max-width: 100%;
       border: none;
     }
+
     footer {
       background: linear-gradient(90deg, #004d99, #003366);
       color: #fff;
@@ -96,18 +108,20 @@
       padding: 15px;
       margin-top: 20px;
     }
+
     footer p {
       margin: 0;
       font-size: 14px;
     }
+
     @media (max-width: 768px) {
       .ad-slot {
+        max-width: 100%; /* Allow ads to resize on mobile */
         height: auto;
-        max-width: 100%;
       }
       iframe {
-        width: 100%;
-        max-width: 100%;
+        width: 100%; /* Full width for mobile */
+        max-width: 100%; /* Avoid overflow on smaller screens */
       }
     }
   </style>
@@ -127,36 +141,26 @@
       <a href="https://zireemilsoude.net/4/8552900" class="cta-button" target="_blank">Start Now</a>
     </section>
 
-    <!-- Placeholder for Ad Section -->
-    <div class="ad-container" id="offers">
-      <!-- 728x90 Ad Banner -->
+    <!-- Ad Section -->
+    <div class="ad-container">
+      <!-- 728x90 Ad Banner (1st Ad) -->
       <div class="ad-slot">
         <iframe id="banner_advert_wrapper_8948" 
-                src="https://api.fpadserver.com/banner?id=8948&size=728x90" 
-                width="728px" 
-                height="90px">
+                src="https://api.fpadserver.com/banner?id=8948&size=728x90">
         </iframe>
       </div>
-    </div>
 
-    <!-- 300x250 Ad Slot -->
-    <div class="ad-container">
+      <!-- 300x250 Ad Slot (2nd Ad) -->
       <div class="ad-slot">
         <iframe id="banner_advert_wrapper_8949" 
-                src="https://api.fpadserver.com/banner?id=8949&size=300x250" 
-                width="300px" 
-                height="250px">
+                src="https://api.fpadserver.com/banner?id=8949&size=300x250">
         </iframe>
       </div>
-    </div>
 
-    <!-- Another 728x90 Ad Banner -->
-    <div class="ad-container">
+      <!-- 728x90 Ad Banner (3rd Ad) -->
       <div class="ad-slot">
         <iframe id="banner_advert_wrapper_8948" 
-                src="https://api.fpadserver.com/banner?id=8948&size=728x90" 
-                width="728px" 
-                height="90px">
+                src="https://api.fpadserver.com/banner?id=8948&size=728x90">
         </iframe>
       </div>
     </div>
