@@ -73,7 +73,7 @@
     .ad-slot {
       width: 100%;
       max-width: 728px;
-      height: 90px;
+      height: auto;
       background: #e0e0e0;
       border: 2px dashed #ccc;
       display: flex;
@@ -82,6 +82,12 @@
       font-size: 16px;
       color: #666;
       overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      border: none;
     }
     footer {
       background: linear-gradient(90deg, #004d99, #003366);
@@ -96,8 +102,12 @@
     }
     @media (max-width: 768px) {
       .ad-slot {
-        max-width: 100%;
         height: auto;
+        max-width: 100%;
+      }
+      iframe {
+        width: 100%;
+        max-width: 100%;
       }
     }
   </style>
@@ -124,33 +134,29 @@
         <iframe id="banner_advert_wrapper_8948" 
                 src="https://api.fpadserver.com/banner?id=8948&size=728x90" 
                 width="728px" 
-                height="90px" 
-                frameborder="0">
+                height="90px">
         </iframe>
       </div>
     </div>
 
-      <!-- Ad Slot Placeholder 2 -->
+    <!-- 300x250 Ad Slot -->
     <div class="ad-container">
-      <!-- 300x250 Ad Slot 1 -->
       <div class="ad-slot">
         <iframe id="banner_advert_wrapper_8949" 
                 src="https://api.fpadserver.com/banner?id=8949&size=300x250" 
                 width="300px" 
-                height="250px" 
-                frameborder="0">
+                height="250px">
         </iframe>
       </div>
+    </div>
 
-      <!-- Ad Slot Placeholder 3 -->
-    <div class="ad-container" id="offers">
-      <!-- 728x90 Ad Banner -->
+    <!-- Another 728x90 Ad Banner -->
+    <div class="ad-container">
       <div class="ad-slot">
         <iframe id="banner_advert_wrapper_8948" 
                 src="https://api.fpadserver.com/banner?id=8948&size=728x90" 
                 width="728px" 
-                height="90px" 
-                frameborder="0">
+                height="90px">
         </iframe>
       </div>
     </div>
